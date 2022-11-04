@@ -1,8 +1,9 @@
 class CreateArray {
+  private array: any[];
   constructor() {
     this.array = [];
   }
-  addValue(size, value) {
+  addValue(size: number, value: any) {
     try {
       if (size > 0) {
         for (let i = 0; i < size; i++) {
@@ -20,6 +21,8 @@ class CreateArray {
   }
 }
 
-const array = new CreateArray();
-array.addValue(2, 'i');
-console.log(array.getArray());
+const arr = new CreateArray();
+arr.addValue(2, 'i');
+console.log(arr.getArray());
+
+export { arr };

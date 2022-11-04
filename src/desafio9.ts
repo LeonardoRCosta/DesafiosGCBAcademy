@@ -1,9 +1,10 @@
 class ArrayDivider {
-  constructor(array) {
+  private array: (number | string)[];
+  constructor(array: (number | string)[]) {
     this.array = array;
   }
-  divide(size) {
-    const dividedArray = [];
+  divide(size: number) {
+    const dividedArray: (number | string)[][] = [];
     try {
       if (size > 0 && this.array.length > 0) {
         for (let i = 0; i < this.array.length; i += size) {
@@ -20,5 +21,7 @@ class ArrayDivider {
   }
 }
 
-const array = new ArrayDivider([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-console.log(array.divide(3));
+const arr: ArrayDivider = new ArrayDivider([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(arr.divide(3));
+
+export { arr };

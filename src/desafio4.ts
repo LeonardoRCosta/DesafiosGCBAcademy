@@ -1,9 +1,10 @@
 class ConvertToObject {
+  private result: any;
   constructor() {
     this.result = {};
   }
 
-  convertArrayToObject(arrays) {
+  convertArrayToObject(arrays: (number | string)[][]) {
     try {
       if (arrays.length > 0) {
         for (let i = 0; i < arrays.length; i++) {

@@ -1,10 +1,11 @@
 class ArraySimplifier {
-  constructor(array) {
+  private array: (number | string)[];
+  constructor(array: (number | string)[]) {
     this.array = array;
   }
 
   simplify() {
-    const simplifiedArray = [];
+    const simplifiedArray: (number | string)[] = [];
     try {
       if (this.array.length > 0) {
         for (let value of this.array) {
@@ -22,5 +23,7 @@ class ArraySimplifier {
   }
 }
 
-const array = new ArraySimplifier([1, 2, 6, 6, 6, 6, 7, 8, 8, 10]);
-console.log(array.simplify());
+const arr = new ArraySimplifier([1, 2, 6, 6, 6, 6, 7, 8, 8, 10]);
+console.log(arr.simplify());
+
+export { arr };

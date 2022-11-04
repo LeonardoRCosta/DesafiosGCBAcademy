@@ -1,10 +1,10 @@
 class ReverseArray {
-  reverse(array) {
-    const reversedArray = [];
+  reverse(array: (number | string)[]) {
+    const reversedArray: (number | string)[] = [];
     try {
       if (array.length > 0) {
         for (let i = array.length - 1; i >= 0; i--) {
-          let item = array[i];
+          let item: (number | string) = array[i];
           reversedArray[reversedArray.length] = item;
         }
       } else {
@@ -17,5 +17,7 @@ class ReverseArray {
   }
 }
 
-const array = new ReverseArray();
-console.log(array.reverse([1, 2, 3, 4, 5]));
+const arr: ReverseArray = new ReverseArray();
+console.log(arr.reverse([1, 2, 3, 4, 5]));
+
+export { arr };

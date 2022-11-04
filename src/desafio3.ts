@@ -1,9 +1,10 @@
 class ArrayCleaner {
-  constructor(array) {
+  private array: any[];
+  constructor(array: any[]) {
     this.array = array;
   }
   clean() {
-    const cleanedArray = [];
+    const cleanedArray: any[] = [];
     try {
       if (this.array.length > 0) {
         for (let value of this.array) {
@@ -21,5 +22,7 @@ class ArrayCleaner {
   }
 }
 
-const array = new ArrayCleaner([0, 2, null, 4, undefined, false, 7, 8, '', 10]);
-console.log(array.clean());
+const arr = new ArrayCleaner([0, 2, null, 4, undefined, false, 7, 8, '', 10]);
+console.log(arr.clean());
+
+export { arr };

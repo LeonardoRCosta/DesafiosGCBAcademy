@@ -1,11 +1,13 @@
 class ArrayCommonElements {
-  constructor(array1, array2) {
+  private array1: (number | string)[];
+  private array2: (number | string)[];
+  constructor(array1: (number | string)[], array2: (number | string)[]) {
     this.array1 = array1;
     this.array2 = array2;
   }
 
   getCommonElements() {
-    const commonElements = [];
+    const commonElements: (number | string)[] = [];
     try {
       if (this.array1.length > 0 && this.array2.length > 0) {
         for (let value of this.array1) {
@@ -25,5 +27,5 @@ class ArrayCommonElements {
   }
 }
 
-const array = new ArrayCommonElements([3, 2, 5, 2, 5], [1, 2, 3, 4, 5]);
-console.log(array.getCommonElements());
+const arr: ArrayCommonElements = new ArrayCommonElements([3, 2, 5, 2, 5], [1, 2, 3, 4, 5]);
+console.log(arr.getCommonElements());

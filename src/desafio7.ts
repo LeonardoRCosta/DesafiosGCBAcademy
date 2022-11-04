@@ -1,5 +1,5 @@
 class ArrayComparator {
-  compare(array1, array2) {
+  compare(array1: (number | string)[], array2: (number | string)[]) {
     try {
       if (array1.length > 0 && array2.length > 0) {
         if (array1.length !== array2.length) {
@@ -21,6 +21,8 @@ class ArrayComparator {
   }
 }
 
-const array = new ArrayComparator();
-console.log(array.compare([1, 2, 3, 4], [1, 2, 3, 4]));
-console.log(array.compare([1, 2, 3, 4], [1, 2, 3, 4, 5]));
+const arr: ArrayComparator = new ArrayComparator();
+console.log(arr.compare([1, 2, 3, 4], [1, 2, 3, 4]));
+console.log(arr.compare([1, 2, 3, 4], [1, 2, 3, 4, 5]));
+
+export { arr };
