@@ -25,4 +25,4 @@ class ArrayFilter {
 const arr: ArrayFilter = new ArrayFilter([5, 5, 4, 8, 3, 2]);
 console.log(arr.filterArray([5, 3, 4]));
 
-export { arr };
+export { arr, ArrayFilter };

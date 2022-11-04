@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.arr = void 0;
+exports.ReverseArray = exports.arr = void 0;
 class ReverseArray {
     reverse(array) {
         const reversedArray = [];
@@ -21,6 +21,7 @@ class ReverseArray {
         return reversedArray;
     }
 }
+exports.ReverseArray = ReverseArray;
 const arr = new ReverseArray();
 exports.arr = arr;
 console.log(arr.reverse([1, 2, 3, 4, 5]));

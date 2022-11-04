@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ConvertToObject = void 0;
 class ConvertToObject {
     constructor() {
         this.result = {};
@@ -20,6 +22,7 @@ class ConvertToObject {
         return this.result;
     }
 }
+exports.ConvertToObject = ConvertToObject;
 const object = new ConvertToObject();
 console.log(object.convertArrayToObject([
     ['G', 1],

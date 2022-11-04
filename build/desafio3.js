@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.arr = void 0;
+exports.ArrayCleaner = exports.arr = void 0;
 class ArrayCleaner {
     constructor(array) {
         this.array = array;
@@ -25,6 +25,7 @@ class ArrayCleaner {
         return cleanedArray;
     }
 }
+exports.ArrayCleaner = ArrayCleaner;
 const arr = new ArrayCleaner([0, 2, null, 4, undefined, false, 7, 8, '', 10]);
 exports.arr = arr;
 console.log(arr.clean());

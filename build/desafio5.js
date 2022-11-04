@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.arr = void 0;
+exports.ArrayFilter = exports.arr = void 0;
 class ArrayFilter {
     constructor(array) {
         this.array = array;
@@ -25,6 +25,7 @@ class ArrayFilter {
         return filteredArray;
     }
 }
+exports.ArrayFilter = ArrayFilter;
 const arr = new ArrayFilter([5, 5, 4, 8, 3, 2]);
 exports.arr = arr;
 console.log(arr.filterArray([5, 3, 4]));

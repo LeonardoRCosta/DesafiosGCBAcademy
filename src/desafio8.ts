@@ -28,4 +28,4 @@ class ArrayMerge {
 const arr: ArrayMerge = new ArrayMerge();
 console.log(arr.merge([1, [2, 3], 4, [5, 6], 7, 8, [9], 10]));
 
-export { arr };
+export { arr, ArrayMerge };

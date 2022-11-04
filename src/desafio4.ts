@@ -28,3 +28,5 @@ console.log(
     ['B', 3],
   ])
 );
+
+export { ConvertToObject }

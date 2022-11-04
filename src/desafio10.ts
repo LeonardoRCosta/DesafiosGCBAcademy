@@ -29,3 +29,5 @@ class ArrayCommonElements {
 
 const arr: ArrayCommonElements = new ArrayCommonElements([3, 2, 5, 2, 5], [1, 2, 3, 4, 5]);
 console.log(arr.getCommonElements());
+
+export { ArrayCommonElements };

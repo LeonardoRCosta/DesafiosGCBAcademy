@@ -20,4 +20,4 @@ class ReverseArray {
 const arr: ReverseArray = new ReverseArray();
 console.log(arr.reverse([1, 2, 3, 4, 5]));
 
-export { arr };
+export { arr, ReverseArray };

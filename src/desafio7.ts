@@ -25,4 +25,4 @@ const arr: ArrayComparator = new ArrayComparator();
 console.log(arr.compare([1, 2, 3, 4], [1, 2, 3, 4]));
 console.log(arr.compare([1, 2, 3, 4], [1, 2, 3, 4, 5]));
 
-export { arr };
+export { arr, ArrayComparator };

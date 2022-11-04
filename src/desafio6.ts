@@ -26,4 +26,4 @@ class ArraySimplifier {
 const arr = new ArraySimplifier([1, 2, 6, 6, 6, 6, 7, 8, 8, 10]);
 console.log(arr.simplify());
 
-export { arr };
+export { arr, ArraySimplifier };

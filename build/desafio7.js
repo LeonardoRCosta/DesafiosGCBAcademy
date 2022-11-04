@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.arr = void 0;
+exports.ArrayComparator = exports.arr = void 0;
 class ArrayComparator {
     compare(array1, array2) {
         try {
@@ -25,6 +25,7 @@ class ArrayComparator {
         return null;
     }
 }
+exports.ArrayComparator = ArrayComparator;
 const arr = new ArrayComparator();
 exports.arr = arr;
 console.log(arr.compare([1, 2, 3, 4], [1, 2, 3, 4]));

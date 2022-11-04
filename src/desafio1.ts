@@ -25,4 +25,4 @@ const arr = new CreateArray();
 arr.addValue(2, 'i');
 console.log(arr.getArray());
 
-export { arr };
+export { arr, CreateArray };

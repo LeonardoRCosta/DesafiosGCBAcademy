@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.arr = void 0;
+exports.ArrayMerge = exports.arr = void 0;
 class ArrayMerge {
     merge(array) {
         const mergedArray = [];
@@ -29,6 +29,7 @@ class ArrayMerge {
         return null;
     }
 }
+exports.ArrayMerge = ArrayMerge;
 const arr = new ArrayMerge();
 exports.arr = arr;
 console.log(arr.merge([1, [2, 3], 4, [5, 6], 7, 8, [9], 10]));

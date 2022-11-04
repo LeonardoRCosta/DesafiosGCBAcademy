@@ -25,4 +25,4 @@ class ArrayCleaner {
 const arr = new ArrayCleaner([0, 2, null, 4, undefined, false, 7, 8, '', 10]);
 console.log(arr.clean());
 
-export { arr };
+export { arr, ArrayCleaner };

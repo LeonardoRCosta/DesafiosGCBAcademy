@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ArrayCommonElements = void 0;
 class ArrayCommonElements {
     constructor(array1, array2) {
         this.array1 = array1;
@@ -26,5 +28,6 @@ class ArrayCommonElements {
         return commonElements;
     }
 }
+exports.ArrayCommonElements = ArrayCommonElements;
 const arr = new ArrayCommonElements([3, 2, 5, 2, 5], [1, 2, 3, 4, 5]);
 console.log(arr.getCommonElements());
